@@ -25,13 +25,32 @@ class monkey():
         
         
     def main(self):
+        pass
+        
+        
+    def findDict(self):
         z = 0
         while True:
             self.addLetter()
             if (z % 20000):
                 self.wordIdentifier()
             z += 1
+            
+    def findString(self):
+        string = input('STRING> ').replace(' ', '')
+        z = 0
         
+        while True:
+            self.addLetter()
+            
+            
+            if (z % 20000):
+                if string in self.collection:
+                    break
+                
+            z += 1
+        
+        print('Word Found')
             
     def addLetter(self):
         self.collection += self.letters[random.randint(0, 25)]
