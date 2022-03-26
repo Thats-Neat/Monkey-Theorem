@@ -67,16 +67,16 @@ In this project I used python to show a basic intro into this Theory
 This is a current list at the time of the scripts latest update
 * random
   ```pip
-  pip install random
-  ```
-  * time
-  ```pip
-  pip install time
-  ```
-  * threading
-  ```pip
-  pip install threading
-  ```
+pip install random
+```
+* time
+```pip
+pip install time
+```
+* threading
+```pip
+pip install threading
+```
   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
