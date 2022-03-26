@@ -2,6 +2,8 @@
 # using simplified keyboard. A-Z
 
 import random
+import time
+from threading import Thread
 
 class monkey():
     
@@ -55,6 +57,17 @@ class monkey():
             if self.words[i] in self.collection and self.words[i] not in self.found:
                 print(f'WORD FOUND - {self.words[i]}')
                 self.found.append(self.words[i])
+                
+    def timer(self):
+        start = time.time()
+        
+        while True:
+            print(len(self.collection))
+            if len(self.collection) >= 1000000:
+                break
+            
+        
+        print(time.time()-start)
     
 
 if __name__ == '__main__':
