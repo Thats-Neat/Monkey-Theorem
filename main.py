@@ -14,7 +14,6 @@ class monkey():
         self.letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'] # maybe add ' '
         self.collection = ''
         self.words = []
-        
         self.found = []
         
         with open('words.txt', 'r') as f:
@@ -25,15 +24,12 @@ class monkey():
 
         
         
-    
     def main(self):
         z = 0
         while True:
             self.addLetter()
-            
             if (z % 50):
                 self.wordIdentifier()
-            
             z += 1
         
             
@@ -46,7 +42,6 @@ class monkey():
                 print(f'WORD FOUND - {self.words[i]}')
                 self.found.append(self.words[i])
     
-
 
 if __name__ == '__main__':
     main = monkey()
