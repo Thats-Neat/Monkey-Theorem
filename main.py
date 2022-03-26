@@ -28,7 +28,7 @@ class monkey():
         z = 0
         while True:
             self.addLetter()
-            if (z % 50):
+            if (z % 20000):
                 self.wordIdentifier()
             z += 1
         
