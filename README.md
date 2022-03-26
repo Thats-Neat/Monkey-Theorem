@@ -88,7 +88,9 @@ Use this script for fun to try your own strings or sit back and watch the flow o
 
 - [x] Find Given String
 - [ ] Find Sentence with Spaces
-- [ ] Find Words in Common List
+- [x] Find Words in Common List
+- [ ] Have threading to speed up amount of letters per second
+- [ ] Spruce up front end
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
