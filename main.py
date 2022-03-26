@@ -37,8 +37,9 @@ class monkey():
         string = input('STRING> ').replace(' ', '')
         z = 0
         
+        start = time.time()
         while True:
-            self.addLetter()
+            Thread(target = self.addLetter()).start()
             
             
             if (z % 20000):
@@ -48,6 +49,8 @@ class monkey():
             z += 1
         
         print('Word Found')
+        print(time.time()-start)
+        input('')
             
     def addLetter(self):
         self.collection += self.letters[random.randint(0, 25)]
