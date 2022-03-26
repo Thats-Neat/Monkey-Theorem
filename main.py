@@ -1,11 +1,6 @@
 # Monkey Theorem
 # using simplified keyboard. A-Z
 
-# To Add
-# find sentence with spaces
-# find words in common list
-# find given string
-
 import random
 
 class monkey():
@@ -25,7 +20,7 @@ class monkey():
         
         
     def main(self):
-        pass
+        self.findString()
         
         
     def findDict(self):
