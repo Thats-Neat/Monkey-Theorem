@@ -78,9 +78,9 @@ This is a current list at the time of the scripts latest update
   pip install threading
   ```
  * string
-  ```pip
-  pip install string
-  ```
+    ```pip
+    pip install string
+    ```
   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
