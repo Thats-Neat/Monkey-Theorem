@@ -18,7 +18,7 @@ class monkey():
         
         
     def main(self):
-        self.findString()
+        self.timer()
         
         
     
