@@ -5,6 +5,7 @@ import random
 import time
 from threading import Thread
 import string
+import threading
 
 
 class monkey():
@@ -39,15 +40,24 @@ class monkey():
     
     
     def addLetter(self):
-        self.collection = "".join([random.choice(string.ascii_letters), self.collection])
+        while True:
+            self.collection = "".join([random.choice(string.ascii_letters), self.collection])
+        
+
         
     
     def timer(self):
         start = time.time()
         
+        for i in range(1):
+            thread = threading.Thread(target=self.addLetter)
+            thread.start()
+            
+        
+        
+        
         while True:
-            self.addLetter()
-            print(len(self.collection))
+            #print(len(self.collection))
 
             if len(self.collection) >= 100000:
                 break
