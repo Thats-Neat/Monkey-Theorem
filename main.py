@@ -4,25 +4,19 @@
 import random
 import time
 from threading import Thread
+import string
 
 
 class monkey():
     
     def __init__(self):
-        self.letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'] # maybe add ' '
         self.collection = ''
-        self.words = []
-        self.found = []
-        
-    
-        
-        
+
+
     def main(self):
         self.timer()
         
-        
-    
-            
+         
     def findString(self):
         string = input('STRING> ').replace(' ', '')
         z = 0
@@ -45,16 +39,8 @@ class monkey():
     
     
     def addLetter(self):
-        self.collection += self.letters[random.randint(0, 25)]
+        self.collection += random.choice(string.ascii_letters)
         
-    
-    
-    def wordIdentifier(self):
-        for i in range(0, len(self.words)):
-            if self.words[i] in self.collection and self.words[i] not in self.found:
-                print(f'WORD FOUND - {self.words[i]}')
-                self.found.append(self.words[i])
-                
     
     def timer(self):
         start = time.time()
