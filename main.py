@@ -39,7 +39,7 @@ class monkey():
     
     
     def addLetter(self):
-        self.collection += random.choice(string.ascii_letters)
+        self.collection = "".join([random.choice(string.ascii_letters), self.collection])
         
     
     def timer(self):
