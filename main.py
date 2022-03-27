@@ -15,7 +15,7 @@ class monkey():
 
 
     def main(self):
-        self.timer()
+        self.findString()
         
          
     def findString(self):
@@ -23,10 +23,13 @@ class monkey():
         z = 0
         
         start = time.time()
+        
+        for i in range(1):
+            thread = threading.Thread(target=self.addLetter)
+            thread.start()
+        
         while True:
-            self.addLetter()
-            
-            
+             
             if (z % 20000):
                 if string in self.collection:
                     break
